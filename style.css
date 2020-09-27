@@ -1,3 +1,83 @@
 html {
+    font-family: 'Lora', serif;
+    color: #666;
+}
+body {
+    margin: 0;
+}
+body > * {
+    margin: 0 auto;
+    width: 65%;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0 0 0.6em 0;
+    letter-spacing: -.035em;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    width: 70%;
+    margin: 0.6em auto;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
+p {
+    margin: 0 0 1.3rem 0
+}
+strong {
+    font-weight: 600;
+}
+mark {
+    background-color: #666;
+    color: white;
+    padding: 0 0.25em;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+a:hover {
+    font-weight: 500;
+    color: inherit;
+}
+ul {
+    padding: 0 0 0 2em;
+    margin: 0 0 1.3rem 0;
+}
+ul ul {
+    margin: 0;
+}
+ul ul > li {
+    list-style-type: none;
+    padding: 0;
+}
+ul ul > li::before {
+    content: "- ";
+    margin-left: -1em;
+}
+ol {
+    padding: 0 0 0 2em;
+    margin: 0 0 1.3rem 0; 
+}
+ol ol {
+    list-style-type: lower-alpha;
+    margin: 0;
 }
