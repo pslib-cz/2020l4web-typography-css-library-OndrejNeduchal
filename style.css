@@ -4,40 +4,43 @@ html {
 }
 body {
     margin: 0;
+}
+body > div {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
     grid-template-areas:
     "header aside"
-    "main aside"
-    "footer footer"
+    "main aside";
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 1.3rem;
 }
 header {
     grid-area: header;
-    margin-left: 200px;
+}
+header p {
+    text-align: center;
 }
 main {
     grid-area: main;
-    margin-left: 200px;
 }
 aside {
     grid-area: aside;
-    margin-right: 200px;
-}
-footer {
-    grid-area: footer;
 }
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0 0 0.6em 0;
     letter-spacing: -.035em;
+    color: black;
 }
 h1 {
     text-align: center;
     font-size: 3rem;
-    margin: 0.3em auto;
+    margin: 0.6em auto;
 }
 h2 {
     font-size: 2.5rem;
@@ -61,18 +64,17 @@ strong {
     font-weight: 600;
 }
 mark {
-    background-color: #666;
+    background-color: #1A6A8A;
     color: white;
     padding: 0 0.25em;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #1A6A8A;
     font-style: italic;
 }
 a:hover {
     font-weight: 500;
-    color: inherit;
 }
 ul {
     padding: 0 0 0 2em;
@@ -130,4 +132,30 @@ img {
 figcaption {
     font-size: 0.75rem;
     text-align: center;
+}
+footer {
+    background-color: #666;
+    color: white;
+    padding: 1em 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+aside h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: #1A6A8A;
+}
+aside figcaption {
+    font-size: 1rem;
+}
+aside a {
+    color: inherit;
 }
