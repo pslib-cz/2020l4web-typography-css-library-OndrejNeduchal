@@ -3,8 +3,8 @@
 ## Demo site
 Link to **[Demo] (http://www.github.io)** site for previews
 ## Dependecies
-https://fonts.google.com/specimen/Montserrat
-https://fonts.google.com/specimen/Lora?query=lora
+**https://fonts.google.com/specimen/Montserrat
+**https://fonts.google.com/specimen/Lora?query=lora
 ## Implementation
 ```
 <head>
