@@ -226,4 +226,7 @@ aside a {
         "main";
         width: 90%;
     }
+    figure, ul, ol, pre, blockquote {
+        break-inside: avoid;
+    }
 }
