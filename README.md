@@ -5,6 +5,7 @@ Link to **[Demo] (http://www.github.io)** site for previews
 ## Dependecies
 ...
 ## Implementation
+```
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@ Link to **[Demo] (http://www.github.io)** site for previews
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500&display=swap"
         rel="stylesheet">
 </head>
-
+```
 ## Usage
 * ul/ol
 * strong
