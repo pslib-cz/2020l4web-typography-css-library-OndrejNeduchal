@@ -85,7 +85,7 @@ This is CSS typography stylesheet for online blog with images, navigation throug
 ### figure
 ```
 <figure class="picture">
-       <img src="./TRIP_06_GOPR7522.jpg" alt="image">
+       <img src="./.../your_picture.img" alt="image">
       <figcaption>This is image caption</figcaption>
 </figure>
 ```
