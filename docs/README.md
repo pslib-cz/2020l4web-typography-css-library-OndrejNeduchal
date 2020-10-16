@@ -28,7 +28,7 @@ This is CSS typography stylesheet for online blog with images, navigation throug
 * q
 * mark
 * a
-* i
+* m
 * p
 * h2, h3, h4, h5, h6 (**h1** is part of tag header, other use of **h2** need to be part of tag aside)
 ## Components
@@ -66,31 +66,32 @@ This is CSS typography stylesheet for online blog with images, navigation throug
 ```
 ### Aside
 ```
-<aside>
-    <nav>
-        <h2>Header of Navigation</h2>
-        <ul>
-            <li><a href="link to other blog">Header of other block</a></li>
-            <li><a href="link to other blog">Header of other block</a></li>
-            <li><a href="link to other blog">Header of other block</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Header of other galleries</h2>
-        <figure>
-            <img src="./TRIP_06_GOPR7522.jpg" alt="image">
-            <figcaption>This is header of other galery</figcaption>
-        </figure>
-        <figure>
-            <img src="./TRIP_06_GOPR7522.jpg" alt="image">
-            <figcaption>This is header of other galery</figcaption>
-        </figure>
-    </section>
+<aside class="extended">
+    ...
 </aside>
+```
+### nav
+```
+<nav class="navigation">
+    <ul>
+         <li><a href="">other content</a></li>
+         <li><a href="">other content</a></li>
+         <li><a href="">other content</a></li>
+         <li><a href="">other content</a></li>
+         <li><a href="">other content</a></li>
+    </ul>
+</nav>
+```
+### figure
+```
+<figure class="picture">
+       <img src="./TRIP_06_GOPR7522.jpg" alt="image">
+      <figcaption>This is image caption</figcaption>
+</figure>
 ```
 ### Footer
 ```
-<footer>
+<footer class="contact">
     <span>Autor name</span>
     <span>Contact info</span>
 </footer>
