@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
+    grid-template-areas:
+    "header aside"
+    "main aside";
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 1.3rem;
+}
+.hdr p {
+    text-align: center;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+.hdr time {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background-color: #666;
+    text-align: center;
+    padding: 0.075em 0;
+}
+@media only screen and (max-width: 1200px) {
+    .grid {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside";
+    }
+}
+@media print {
+    aside {
+        display: none;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main";
+        width: 90%;
+}

@@ -2,33 +2,6 @@ html {
     font-family: 'Lora', serif;
     color: #666;
 }
-body {
-    margin: 0;
-}
-body > div {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 40px;
-    grid-template-areas:
-    "header aside"
-    "main aside";
-    width: 1160px;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 1.3rem;
-}
-header {
-    grid-area: header;
-}
-header p {
-    text-align: center;
-}
-main {
-    grid-area: main;
-}
-aside {
-    grid-area: aside;
-}
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -77,7 +50,7 @@ a {
 a:hover {
     font-weight: 400;
 }
-i {
+m {
     color: #1A6A8A;
 }
 pre {
@@ -90,17 +63,6 @@ pre {
 ul {
     padding: 0 0 0 2em;
     margin: 0 0 1.3rem 0;
-}
-ul ul {
-    margin: 0;
-}
-ul ul > li {
-    list-style-type: none;
-    padding: 0;
-}
-ul ul > li::before {
-    content: "- ";
-    margin-left: -1em;
 }
 ol {
     padding: 0 0 0 2em;
@@ -121,30 +83,18 @@ blockquote {
     text-align: justify;
     text-align-last: center;
 }
-time {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2rem;
-    display: block;
-    margin: 0 auto;
-    color: white;
-    background-color: #666;
-    text-align: center;
-    padding: 0.075em 0;
-}
-figure {
+.picture {
     margin: 0 0 1.3rem 0;
 }
-img {
+.picture img {
     width: 100%;
     height: auto;
 }
-figcaption {
+.picture figcaption {
     font-size: 0.75rem;
     text-align: center;
 }
-footer {
+.contact {
     background-color: #666;
     color: white;
     padding: 1em 20%;
@@ -152,37 +102,23 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
-nav ul {
+.navigation ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
     font-size: 1.3rem;
 }
-aside h2 {
+.extended h2 {
     text-align: center;
     font-size: 2rem;
     color: white;
     background-color: #1A6A8A;
 }
-aside figcaption {
+.extended figcaption {
     font-size: 1rem;
 }
-aside a {
+.extended a {
     color: inherit;
-}
-@media only screen and (max-width: 1200px) {
-    body > div {
-        width: 90%;
-    }
-}
-@media only screen and (max-width: 800px) {
-    body > div {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "header"
-        "main"
-        "aside";
-    }
 }
 @media only screen and (max-width: 800px) {
     h1 {
@@ -203,29 +139,19 @@ aside a {
     h6 {
         font-size: 1.03rem;
     }
-    aside h2 {
+    .extended h2 {
         font-size: 1.25rem;
     }
-    nav ul {
+    .navigation ul {
         font-size: 1rem;
     }
 }
 @media only screen and (max-width: 640px) {
-    footer {
+    .contact {
         padding: 1em 10%;
     }
 }
 @media print {
-    aside {
-        display: none;
-    }
-    body > div {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "header"
-        "main";
-        width: 90%;
-    }
     figure, ul, ol, pre, blockquote {
         break-inside: avoid;
     }
