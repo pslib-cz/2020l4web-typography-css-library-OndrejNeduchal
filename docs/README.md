@@ -1,7 +1,7 @@
 # Typography CSS library
 **Author:** *Ondřej Neduchal*
 ## Demo site
-(http://OndrejNeduchal.github.io/typography1)** site for previews
+(https://pslib-cz.github.io/2020l4web-typography-css-library-OndrejNeduchal/)** site for previews
 ## Dependecies
 * https://fonts.google.com/specimen/Montserrat
 * https://fonts.google.com/specimen/Lora?query=lora
