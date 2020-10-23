@@ -1,0 +1,158 @@
+html {
+    font-family: 'Lora', serif;
+    color: #666;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0 0 0.6em 0;
+    letter-spacing: -.035em;
+    color: black;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.6em auto;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
+p {
+    margin: 0 0 1.3rem 0
+}
+strong {
+    font-weight: 600;
+}
+mark {
+    background-color: #1A6A8A;
+    color: white;
+    padding: 0 0.25em;
+}
+a {
+    text-decoration: none;
+    color: #1A6A8A;
+    font-weight: 600;
+}
+a:hover {
+    font-weight: 400;
+}
+m {
+    color: #1A6A8A;
+}
+pre {
+    margin: 0 0 1.3rem 0;
+    background-color: rgb(228, 227, 227);
+    padding: 0.4em;
+    max-width: 100%;
+    width: fit-content;
+}
+ul {
+    padding: 0 0 0 2em;
+    margin: 0 0 1.3rem 0;
+}
+ol {
+    padding: 0 0 0 2em;
+    margin: 0 0 1.3rem 0; 
+}
+ol ol {
+    list-style-type: lower-alpha;
+    margin: 0;
+}
+cite {
+    text-decoration: underline;
+}
+q {
+    font-style: italic;
+}
+blockquote {
+    margin: 0 0 1.3rem 0;
+    text-align: justify;
+    text-align-last: center;
+}
+.picture {
+    margin: 0 0 1.3rem 0;
+}
+.picture img {
+    width: 100%;
+    height: auto;
+}
+.picture figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+}
+.contact {
+    background-color: #666;
+    color: white;
+    padding: 1em 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.extended h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: #1A6A8A;
+}
+.extended figcaption {
+    font-size: 1rem;
+}
+.extended a {
+    color: inherit;
+}
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    h4 {
+        font-size: 1.125rem;
+    }
+    h5 {
+        font-size: 1.06rem;
+    }
+    h6 {
+        font-size: 1.03rem;
+    }
+    .extended h2 {
+        font-size: 1.25rem;
+    }
+    .navigation ul {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .contact {
+        padding: 1em 10%;
+    }
+}
+@media print {
+    figure, ul, ol, pre, blockquote {
+        break-inside: avoid;
+    }
+}
